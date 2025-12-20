@@ -1,0 +1,130 @@
+.btn {
+  padding: 14px 36px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(120deg, var(--gold), var(--gold-light));
+  color: #000;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: transform var(--transition-fast);
+  text-decoration: none;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.btn-primary {
+  background: var(--gold);
+  color: #000;
+  border: none;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+}
+
+.project-card,
+.service-card,
+.team-card {
+  background: var(--blue);
+  padding: 40px;
+  border-radius: var(--radius-lg);
+  transition: var(--transition);
+}
+
+.project-card:hover,
+.service-card:hover,
+.team-card:hover {
+  background: var(--blue-light);
+  cursor: help;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 14px;
+  border-radius: var(--radius-sm);
+  border: none;
+}
+
+#theme-toggle {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+#theme-icon {
+  stroke: var(--gold);
+  fill: none;
+  stroke-width: 1.5;
+  opacity: 0.35;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#theme-toggle:hover #theme-icon {
+  opacity: 1;
+  transform: rotate(20deg) scale(1.05);
+}
+
+/* Vídeos dos cards de projetos */
+.project-card .project-bg video {
+  width: 640px;
+}
+
+/* Hover cards serviços - troca de fundo */
+.service-card {
+  position: relative;
+  transition: background 0.4s, color 0.3s;
+  background: #fff;
+  z-index: 1;
+}
+.service-card:hover {
+  color: #fff;
+}
+.service-card.service-arquitetura:hover {
+  background: url("../images/planta.jpeg") center/cover no-repeat;
+}
+.service-card.service-3d:hover {
+  background: url("../images/3d.jpeg") center/cover no-repeat;
+}
+.service-card.service-moveis:hover {
+  background: url("../images/movel.jpeg") center/cover no-repeat;
+}
+.service-card:hover .service-icon,
+.service-card:hover h3,
+.service-card:hover p {
+  color: #fff !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* Overlay escuro nas imagens de fundo dos cards de serviço no hover */
+.service-card.service-arquitetura:hover::after,
+.service-card.service-3d:hover::after,
+.service-card.service-moveis:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.service-card {
+  position: relative;
+  overflow: hidden;
+}
+.service-card > * {
+  position: relative;
+  z-index: 2;
+}

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NNL Arquitetura</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/animations.css" />
+    <link rel="stylesheet" href="assets/css/sections.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <!-- HERO -->
+    <header id="hero" class="section section-hero spotlight">
+      <div class="hero-bg">
+        <span class="hero-glow"></span>
+        <span class="hero-grid"></span>
+      </div>
+
+      <div class="hero-content fade-up">
+        <span class="hero-eyebrow">NNL Arquitetura</span>
+
+        <h1>
+          Arquitetura<br />
+          <span>com precisão e presença</span>
+        </h1>
+
+        <p>Projetos 3D, mobiliário planejado e arquitetura</p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+          <a href="#quiz" class="btn btn-outline">Diagnóstico em 30s</a>
+        </div>
+      </div>
+
+      <div class="hero-scroll">
+        <span></span>
+      </div>
+    </header>
+
+    <!-- PROJETOS -->
+    <section id="projects" class="section section-projects">
+      <header class="section-header">
+        <span class="section-eyebrow">Portfólio</span>
+        <h2 class="section-title">Projetos em Destaque</h2>
+        <p class="section-description">
+          Arquitetura e interiores pensados para estética, conforto e
+          identidade.
+        </p>
+      </header>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-bg">
+            <video
+              src="assets/videos/apartamento.mp4"
+              autoplay
+              loop
+              muted
+              playsinline
+            ></video>
+          </div>
+          <div class="project-content">
+            <h3>Apartamento</h3>
+            <span>Residencial</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-bg">
+            <video
+              src="assets/videos/casa.mp4"
+              autoplay
+              loop
+              muted
+              playsinline
+            ></video>
+          </div>
+          <div class="project-content">
+            <h3>Casa</h3>
+            <span>Alto padrão</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-bg">
+            <video
+              src="assets/videos/moveis.mp4"
+              autoplay
+              loop
+              muted
+              playsinline
+            ></video>
+          </div>
+          <div class="project-content">
+            <h3 class="custom-project-content-h3">Mobiliário Planejado</h3>
+            <span>Interiores</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section id="services" class="section section-services">
+      <header class="section-header">
+        <span class="section-eyebrow">Especialidades</span>
+        <h2 class="section-title">O que fazemos</h2>
+        <p class="section-description">
+          Atuamos do conceito ao detalhe, unindo estética, função e identidade.
+        </p>
+      </header>
+
+      <div class="services-grid">
+        <article class="service-card service-arquitetura">
+          <div class="service-icon architecture"></div>
+          <h3>Arquitetura</h3>
+          <p>
+            Projetos arquitetônicos pensados para proporção, conforto e
+            funcionalidade.
+          </p>
+        </article>
+
+        <article class="service-card service-3d featured">
+          <div class="service-icon render"></div>
+          <h3>Projetos 3D</h3>
+          <p>
+            Visualização realista que antecipa decisões e valoriza o projeto
+            antes da execução.
+          </p>
+        </article>
+
+        <article class="service-card service-moveis">
+          <div class="service-icon furniture"></div>
+          <h3>Móveis Planejados</h3>
+          <p>
+            Soluções sob medida que unem estética, ergonomia e aproveitamento
+            inteligente do espaço.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- NÚMEROS -->
+    <section id="numbers" class="section section-numbers">
+      <header class="section-header">
+        <span class="section-eyebrow">Experiência</span>
+        <h2 class="section-title">Nossos números</h2>
+        <p class="section-description">
+          Resultados construídos com consistência, detalhe e compromisso.
+        </p>
+      </header>
+
+      <div class="numbers-grid">
+        <div class="number-card">
+          <span class="number-value" data-counter="120">0</span>
+          <span class="number-label">Projetos realizados</span>
+        </div>
+
+        <div class="number-card">
+          <span class="number-value" data-counter="8">0</span>
+          <span class="number-label">Anos de experiência</span>
+        </div>
+
+        <div class="number-card">
+          <span class="number-value" data-counter="300">0</span>
+          <span class="number-label">Ambientes projetados</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESSOS -->
+    <section id="process" class="section section-process">
+      <header class="section-header">
+        <span class="section-eyebrow">Metodologia</span>
+        <h2 class="section-title">Nosso Processo</h2>
+        <p class="section-description">
+          Cada etapa é pensada para dar clareza, segurança e excelência ao
+          resultado.
+        </p>
+      </header>
+
+      <div class="process-track">
+        <div class="process-path"></div>
+
+        <div
+          class="process-node up"
+          data-tooltip="Entendimento profundo das necessidades, referências e objetivos do projeto."
+        >
+          <span class="node-index">01</span>
+          <span class="node-title">Briefing</span>
+        </div>
+
+        <div
+          class="process-node down"
+          data-tooltip="Análise técnica, estudo do espaço e definição do conceito."
+        >
+          <span class="node-index">02</span>
+          <span class="node-title">Estudo</span>
+        </div>
+
+        <div
+          class="process-node up highlight"
+          data-tooltip="Modelagem 3D realista para validação estética e funcional."
+        >
+          <span class="node-index">03</span>
+          <span class="node-title">Projeto 3D</span>
+        </div>
+
+        <div
+          class="process-node down"
+          data-tooltip="Execução com acompanhamento técnico e atenção aos detalhes."
+        >
+          <span class="node-index">04</span>
+          <span class="node-title">Execução</span>
+        </div>
+
+        <div
+          class="process-node up"
+          data-tooltip="Entrega final com tudo pronto para uso."
+        >
+          <span class="node-index">05</span>
+          <span class="node-title">Entrega</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- EQUIPE -->
+    <section id="team" class="section section-team">
+      <header class="section-header">
+        <span class="section-eyebrow">Equipe</span>
+        <h2 class="section-title">NNL Arquitetura</h2>
+        <p class="section-description">
+          Profissionais que unem técnica, estética e visão estratégica.
+        </p>
+      </header>
+
+      <div class="team-grid">
+        <!-- Pessoa 1 -->
+        <article class="team-card">
+          <div
+            class="team-photo"
+            style="background-image: url('assets/images/michelle.jpeg')"
+          ></div>
+
+          <div class="team-info">
+            <h3>Michelle Lopes</h3>
+            <span>29 anos</span>
+            <p>Arquiteta • Projetos e Interiores</p>
+          </div>
+        </article>
+
+        <!-- Pessoa 2 -->
+        <article class="team-card">
+          <div
+            class="team-photo"
+            style="background-image: url('assets/images/michelle.jpeg')"
+          ></div>
+
+          <div class="team-info">
+            <h3>Michelle Lopes</h3>
+            <span>29 anos</span>
+            <p>Arquiteta • Projetos e Interiores</p>
+          </div>
+        </article>
+
+        <!-- Pessoa 3 -->
+        <article class="team-card">
+          <div
+            class="team-photo"
+            style="background-image: url('assets/images/michelle.jpeg')"
+          ></div>
+
+          <div class="team-info">
+            <h3>Michelle Lopes</h3>
+            <span>29 anos</span>
+            <p>Arquiteta • Projetos e Interiores</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- QUIZ -->
+    <section id="quiz" class="section section-quiz">
+      <header class="section-header">
+        <span class="section-eyebrow">Diagnóstico rápido</span>
+        <h2 class="section-title">Diagnóstico em 30 segundos</h2>
+        <p class="section-description">
+          Responda algumas perguntas rápidas e receba uma orientação inicial do
+          seu projeto.
+        </p>
+      </header>
+
+      <div class="quiz-card">
+        <div class="quiz-progress">
+          <span class="quiz-bar"></span>
+        </div>
+
+        <form class="quiz-form">
+          <!-- STEP 1 -->
+          <div class="quiz-step active">
+            <h3>Qual tipo de projeto?</h3>
+
+            <div class="quiz-options">
+              <button type="button" data-value="Apartamento">
+                Apartamento
+              </button>
+              <button type="button" data-value="Casa">Casa</button>
+              <button type="button" data-value="Móveis Planejados">
+                Móveis Planejados
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 2 -->
+          <div class="quiz-step">
+            <h3>Tamanho aproximado?</h3>
+
+            <div class="quiz-options">
+              <button type="button" data-value="Até 50m²">Até 50m²</button>
+              <button type="button" data-value="50m² – 100m²">
+                50m² – 100m²
+              </button>
+              <button type="button" data-value="100m²+">100m²+</button>
+            </div>
+          </div>
+
+          <!-- STEP 3 -->
+          <div class="quiz-step">
+            <h3>Para onde enviamos o diagnóstico?</h3>
+
+            <input type="email" placeholder="Seu melhor e-mail" required />
+            <button type="submit" class="btn btn-primary">
+              Receber diagnóstico
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section section-faq">
+      <header class="section-header">
+        <span class="section-eyebrow">Dúvidas</span>
+        <h2 class="section-title">Perguntas Frequentes</h2>
+        <p class="section-description">
+          Algumas respostas para as dúvidas mais comuns sobre nosso trabalho.
+        </p>
+      </header>
+
+      <div class="faq-container">
+        <div class="faq-item">
+          <button class="faq-question">
+            Vocês atendem fora da cidade?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Sim. Atendemos projetos em diferentes cidades e estados, tanto de
+              forma presencial quanto remota, dependendo da etapa do projeto.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Vocês fazem apenas projetos 3D?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Não. Desenvolvemos projetos completos, desde o conceito
+              arquitetônico, passando pelo 3D, até a execução e detalhamento.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Posso contratar apenas uma etapa do projeto?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Sim. É possível contratar apenas o projeto arquitetônico, o 3D ou
+              mobiliário planejado, conforme sua necessidade.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            O projeto é personalizado ou seguem um padrão?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Todos os projetos são totalmente personalizados. Cada cliente,
+              espaço e objetivo é tratado de forma única.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Como funciona o prazo de entrega?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Os prazos variam conforme a complexidade do projeto e são
+              definidos com clareza logo no início do processo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contact" class="section section-contact">
+      <div class="contact-wrapper">
+        <header class="contact-header">
+          <span class="section-eyebrow">Contato</span>
+          <h2>Vamos conversar?</h2>
+          <p>
+            Conte um pouco sobre sua ideia. Retornamos com atenção e clareza.
+          </p>
+        </header>
+
+        <form class="contact-form">
+          <div class="input-group">
+            <input type="email" required />
+            <label>Seu e-mail</label>
+          </div>
+
+          <div class="input-group">
+            <textarea rows="4" required></textarea>
+            <label>Mensagem</label>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <h3>NNL Arquitetura</h3>
+          <p>Arquitetura, interiores e mobiliário planejado com identidade.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#projects">Projetos</a>
+          <a href="#services">Serviços</a>
+          <a href="#process">Processo</a>
+          <a href="#contact">Contato</a>
+        </div>
+
+        <div class="footer-copy">
+          © <span id="year"></span> NNL Arquitetura. Todos os direitos
+          reservados.
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/faq.js"></script>
+    <script src="assets/js/spotlight.js"></script>
+    <script src="assets/js/counters.js"></script>
+    <script src="assets/js/beforeAfter.js"></script>
+    <script src="assets/js/quiz.js"></script>
+    <script src="assets/js/tiltCards.js"></script>
+  </body>
+</html>
