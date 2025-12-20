@@ -35,32 +35,6 @@ A identidade transmite luxo técnico, profundidade e inovação, alinhada ao pos
 
 ---
 
-## 📁 Estrutura do Projeto
-
-```
-nnl-arquitetura-site-imersivo/
-│
-├── index.html               # Página principal
-├── /assets
-│   ├── /img                 # Imagens, logos, placeholders do carrossel
-│   ├── /icons               # Ícones SVG
-│   └── /3d                  # Previews e renders (futuro)
-│
-├── /css
-│   ├── style.css            # Estilos principais
-│   ├── animations.css       # Animações separadas para organização
-│   └── variables.css        # Variáveis da paleta e fontes
-│
-├── /js
-│   ├── main.js              # Scripts gerais do site
-│   ├── carousel.js          # Carrossel de projetos
-│   └── faq.js               # Interações do FAQ
-│
-└── README.md                # Documentação do projeto
-```
-
----
-
 ## 🚀 Tecnologias Utilizadas
 
 * **HTML5**

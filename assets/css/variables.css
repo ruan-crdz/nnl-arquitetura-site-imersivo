@@ -1,0 +1,18 @@
+:root {
+  --blue-dark: #0b1c2d;
+  --blue: #102a43;
+  --blue-light: #163a5f;
+
+  --gold: #c9a24d;
+  --gold-light: #e3c77a;
+
+  --white: #ffffff;
+  --gray: #cfd8dc;
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+
+  --transition-fast: 0.2s ease;
+  --transition: 0.4s ease;
+}
