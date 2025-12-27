@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>NNL Arquitetura</title>
+    <script
+      src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.11/dist/dotlottie-wc.js"
+      type="module"
+    ></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/reset.css" />
@@ -17,25 +22,58 @@
   </head>
   <body>
     <!-- HERO -->
+    <div class="logo-fixed">
+      <img
+        src="assets/images/logo.png"
+        alt="NNL Arquitetura Logo"
+        class="logo-img"
+      />
+      <svg
+        class="arrow-up"
+        width="32"
+        height="32"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 19V5M12 5L5 12M12 5L19 12"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </div>
     <header id="hero" class="section section-hero spotlight">
       <div class="hero-bg">
         <span class="hero-glow"></span>
         <span class="hero-grid"></span>
       </div>
 
-      <div class="hero-content fade-up">
-        <span class="hero-eyebrow">NNL Arquitetura</span>
+      <div class="hero-flex">
+        <div class="hero-content fade-up">
+          <span class="hero-eyebrow">NNL Arquitetura</span>
 
-        <h1>
-          Arquitetura<br />
-          <span>com precisão e presença</span>
-        </h1>
+          <h1>
+            Arquitetura<br />
+            <span>com precisão e presença</span>
+          </h1>
 
-        <p>Projetos 3D, mobiliário planejado e arquitetura</p>
+          <p>Projetos 3D, mobiliário planejado e arquitetura</p>
 
-        <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">Ver Projetos</a>
-          <a href="#quiz" class="btn btn-outline">Diagnóstico em 30s</a>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+            <a href="#quiz" class="btn btn-outline">Diagnóstico em 30s</a>
+          </div>
+        </div>
+        <div class="hero-triangle">
+          <dotlottie-wc
+            src="https://lottie.host/dfea83ac-1b9a-471d-9d07-9cfcd617cece/DWwiVWoNt2.lottie"
+            style="width: 300px; height: 300px"
+            autoplay
+            loop
+          ></dotlottie-wc>
         </div>
       </div>
 
@@ -119,28 +157,29 @@
       <div class="services-grid">
         <article class="service-card service-arquitetura">
           <div class="service-icon architecture"></div>
-          <h3>Arquitetura</h3>
+          <h3>Arquitetura & Técnica</h3>
           <p>
-            Projetos arquitetônicos pensados para proporção, conforto e
-            funcionalidade.
+            Projetos residenciais e comerciais com foco em funcionalidade,
+            setorização inteligente e melhor aproveitamento de espaços.
           </p>
         </article>
 
         <article class="service-card service-3d featured">
           <div class="service-icon render"></div>
-          <h3>Projetos 3D</h3>
+          <h3>Desenhos & Regularização</h3>
           <p>
-            Visualização realista que antecipa decisões e valoriza o projeto
-            antes da execução.
+            Desenhos técnicos completos em AutoCAD, detalhamentos para obra e
+            documentação técnica para regularização e aprovação legal.
           </p>
         </article>
 
         <article class="service-card service-moveis">
           <div class="service-icon furniture"></div>
-          <h3>Móveis Planejados</h3>
+          <h3>3D, Interiores & Visualização</h3>
           <p>
-            Soluções sob medida que unem estética, ergonomia e aproveitamento
-            inteligente do espaço.
+            Modelagem 3D, renderizações realistas, projetos de interiores e
+            mobiliário planejado para visualizar e definir cada detalhe do
+            espaço.
           </p>
         </article>
       </div>
@@ -187,42 +226,37 @@
 
       <div class="process-track">
         <div class="process-path"></div>
-
         <div
           class="process-node up"
-          data-tooltip="Entendimento profundo das necessidades, referências e objetivos do projeto."
+          data-tooltip="Entendimento das necessidades, briefing detalhado e levantamento de informações do cliente."
         >
           <span class="node-index">01</span>
-          <span class="node-title">Briefing</span>
+          <span class="node-title">Briefing & Levantamento</span>
         </div>
-
         <div
           class="process-node down"
-          data-tooltip="Análise técnica, estudo do espaço e definição do conceito."
+          data-tooltip="Estudo de setorização, funcionalidade, layout e melhor aproveitamento dos espaços."
         >
           <span class="node-index">02</span>
-          <span class="node-title">Estudo</span>
+          <span class="node-title">Estudo & Layout</span>
         </div>
-
         <div
           class="process-node up highlight"
-          data-tooltip="Modelagem 3D realista para validação estética e funcional."
+          data-tooltip="Desenvolvimento dos desenhos técnicos, detalhamentos e documentação para aprovação legal."
         >
           <span class="node-index">03</span>
-          <span class="node-title">Projeto 3D</span>
+          <span class="node-title">Desenhos Técnicos</span>
         </div>
-
         <div
           class="process-node down"
-          data-tooltip="Execução com acompanhamento técnico e atenção aos detalhes."
+          data-tooltip="Modelagem 3D, renderizações realistas, definição de interiores e mobiliário planejado."
         >
           <span class="node-index">04</span>
-          <span class="node-title">Execução</span>
+          <span class="node-title">3D & Interiores</span>
         </div>
-
         <div
           class="process-node up"
-          data-tooltip="Entrega final com tudo pronto para uso."
+          data-tooltip="Entrega final do projeto completo, com todos os documentos, desenhos e visualizações."
         >
           <span class="node-index">05</span>
           <span class="node-title">Entrega</span>
@@ -245,13 +279,12 @@
         <article class="team-card">
           <div
             class="team-photo"
-            style="background-image: url('assets/images/michelle.jpeg')"
+            style="background-image: url('assets/images/adrianaNegrini.jpeg')"
           ></div>
 
           <div class="team-info">
-            <h3>Michelle Lopes</h3>
-            <span>29 anos</span>
-            <p>Arquiteta • Projetos e Interiores</p>
+            <h3>Adriana Negrini</h3>
+            <p>Engenharia Civil - Universidade Paulista</p>
           </div>
         </article>
 
@@ -259,13 +292,12 @@
         <article class="team-card">
           <div
             class="team-photo"
-            style="background-image: url('assets/images/michelle.jpeg')"
+            style="background-image: url('assets/images/eduardoNegrini.jpeg')"
           ></div>
 
           <div class="team-info">
-            <h3>Michelle Lopes</h3>
-            <span>29 anos</span>
-            <p>Arquiteta • Projetos e Interiores</p>
+            <h3>Eduardo Negrini</h3>
+            <p>Arquiteta e Urbanista - Universidade Cidade de São Paulo</p>
           </div>
         </article>
 
@@ -273,13 +305,12 @@
         <article class="team-card">
           <div
             class="team-photo"
-            style="background-image: url('assets/images/michelle.jpeg')"
+            style="background-image: url('assets/images/michelleLopes.jpeg')"
           ></div>
 
           <div class="team-info">
             <h3>Michelle Lopes</h3>
-            <span>29 anos</span>
-            <p>Arquiteta • Projetos e Interiores</p>
+            <p>Arquiteta e Urbanista -  Universidade Cidade de São Paulo</p>
           </div>
         </article>
       </div>
@@ -291,8 +322,9 @@
         <span class="section-eyebrow">Diagnóstico rápido</span>
         <h2 class="section-title">Diagnóstico em 30 segundos</h2>
         <p class="section-description">
-          Responda algumas perguntas rápidas e receba uma orientação inicial do
-          seu projeto.
+          Responda algumas perguntas rápidas e receba uma orientação inicial
+          personalizada para seu projeto. O resultado será enviado para o seu
+          e-mail.
         </p>
       </header>
 
@@ -301,40 +333,50 @@
           <span class="quiz-bar"></span>
         </div>
 
-        <form class="quiz-form">
+        <form class="quiz-form" id="diagnosticoForm">
           <!-- STEP 1 -->
           <div class="quiz-step active">
             <h3>Qual tipo de projeto?</h3>
-
             <div class="quiz-options">
-              <button type="button" data-value="Apartamento">
-                Apartamento
+              <button type="button" data-value="Residencial">
+                Residencial
               </button>
-              <button type="button" data-value="Casa">Casa</button>
-              <button type="button" data-value="Móveis Planejados">
-                Móveis Planejados
+              <button type="button" data-value="Comercial">Comercial</button>
+              <button type="button" data-value="Regularização">
+                Regularização
+              </button>
+              <button type="button" data-value="3D/Interiores">
+                3D/Interiores
               </button>
             </div>
           </div>
-
           <!-- STEP 2 -->
           <div class="quiz-step">
-            <h3>Tamanho aproximado?</h3>
-
+            <h3>O que você precisa?</h3>
             <div class="quiz-options">
-              <button type="button" data-value="Até 50m²">Até 50m²</button>
-              <button type="button" data-value="50m² – 100m²">
-                50m² – 100m²
+              <button type="button" data-value="Projeto Completo">
+                Projeto Completo
               </button>
-              <button type="button" data-value="100m²+">100m²+</button>
+              <button type="button" data-value="Desenhos Técnicos">
+                Desenhos Técnicos
+              </button>
+              <button type="button" data-value="Modelagem 3D">
+                Modelagem 3D
+              </button>
+              <button type="button" data-value="Aprovação Legal">
+                Aprovação Legal
+              </button>
             </div>
           </div>
-
           <!-- STEP 3 -->
           <div class="quiz-step">
             <h3>Para onde enviamos o diagnóstico?</h3>
-
-            <input type="email" placeholder="Seu melhor e-mail" required />
+            <input
+              type="email"
+              id="quizEmail"
+              placeholder="Seu melhor e-mail"
+              required
+            />
             <button type="submit" class="btn btn-primary">
               Receber diagnóstico
             </button>
@@ -356,65 +398,64 @@
       <div class="faq-container">
         <div class="faq-item">
           <button class="faq-question">
-            Vocês atendem fora da cidade?
+            Vocês fazem regularização e aprovação de projetos?
             <span class="faq-icon"></span>
           </button>
           <div class="faq-answer">
             <p>
-              Sim. Atendemos projetos em diferentes cidades e estados, tanto de
-              forma presencial quanto remota, dependendo da etapa do projeto.
+              Sim! Elaboramos toda a documentação técnica, desenhos em AutoCAD e
+              detalhamentos necessários para regularização e aprovação legal
+              junto aos órgãos competentes.
             </p>
           </div>
         </div>
-
         <div class="faq-item">
           <button class="faq-question">
-            Vocês fazem apenas projetos 3D?
+            Vocês fazem projetos residenciais e comerciais?
             <span class="faq-icon"></span>
           </button>
           <div class="faq-answer">
             <p>
-              Não. Desenvolvemos projetos completos, desde o conceito
-              arquitetônico, passando pelo 3D, até a execução e detalhamento.
+              Sim, atuamos tanto em projetos residenciais quanto comerciais,
+              sempre focando em funcionalidade, setorização inteligente e melhor
+              aproveitamento dos espaços.
             </p>
           </div>
         </div>
-
         <div class="faq-item">
           <button class="faq-question">
-            Posso contratar apenas uma etapa do projeto?
+            Posso contratar só modelagem 3D ou interiores?
             <span class="faq-icon"></span>
           </button>
           <div class="faq-answer">
             <p>
-              Sim. É possível contratar apenas o projeto arquitetônico, o 3D ou
-              mobiliário planejado, conforme sua necessidade.
+              Sim! Oferecemos modelagem 3D, renderizações realistas, projetos de
+              interiores e mobiliário planejado de forma independente ou
+              integrada ao projeto completo.
             </p>
           </div>
         </div>
-
         <div class="faq-item">
           <button class="faq-question">
-            O projeto é personalizado ou seguem um padrão?
+            Os projetos são personalizados?
             <span class="faq-icon"></span>
           </button>
           <div class="faq-answer">
             <p>
-              Todos os projetos são totalmente personalizados. Cada cliente,
-              espaço e objetivo é tratado de forma única.
+              Todos os projetos são personalizados conforme as necessidades,
+              estilo e objetivos de cada cliente.
             </p>
           </div>
         </div>
-
         <div class="faq-item">
           <button class="faq-question">
-            Como funciona o prazo de entrega?
+            Vocês entregam desenhos técnicos detalhados para obra?
             <span class="faq-icon"></span>
           </button>
           <div class="faq-answer">
             <p>
-              Os prazos variam conforme a complexidade do projeto e são
-              definidos com clareza logo no início do processo.
+              Sim, entregamos todos os desenhos técnicos e detalhamentos
+              necessários para execução da obra com segurança e precisão.
             </p>
           </div>
         </div>
@@ -432,14 +473,14 @@
           </p>
         </header>
 
-        <form class="contact-form">
+        <form class="contact-form" id="contatoForm">
           <div class="input-group">
-            <input type="email" required />
+            <input type="email" id="contatoEmail" required />
             <label>Seu e-mail</label>
           </div>
 
           <div class="input-group">
-            <textarea rows="4" required></textarea>
+            <textarea id="contatoMensagem" rows="4" required></textarea>
             <label>Mensagem</label>
           </div>
 
@@ -479,5 +520,94 @@
     <script src="assets/js/beforeAfter.js"></script>
     <script src="assets/js/quiz.js"></script>
     <script src="assets/js/tiltCards.js"></script>
+    <script src="assets/js/sectionSnap.js"></script>
+    <script>
+      // Diagnóstico: coleta respostas e envia para o e-mail
+      (function () {
+        const form = document.getElementById("diagnosticoForm");
+        const steps = document.querySelectorAll(".quiz-step");
+        const buttons = document.querySelectorAll(".quiz-options button");
+        const progress = document.querySelector(".quiz-bar");
+        let currentStep = 0;
+        let respostas = [];
+
+        buttons.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            respostas[currentStep] = btn.getAttribute("data-value");
+            steps[currentStep].classList.remove("active");
+            currentStep++;
+            if (steps[currentStep]) {
+              steps[currentStep].classList.add("active");
+              progress.style.width = `${(currentStep + 1) * 33}%`;
+            }
+          });
+        });
+
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          const email = document.getElementById("quizEmail").value;
+          // Monta mensagem
+          const mensagem = `Diagnóstico solicitado:\nTipo de projeto: ${respostas[0]}\nNecessidade: ${respostas[1]}\nE-mail: ${email}`;
+          // Envia para o e-mail do responsável (ruancrdz2004@gmail.com)
+          fetch("https://formsubmit.co/ajax/ruancrdz2004@gmail.com", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json",
+            },
+            body: JSON.stringify({
+              message: mensagem,
+              email: email,
+            }),
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              alert(
+                "Diagnóstico enviado! Você receberá o resultado por e-mail."
+              );
+              form.reset();
+              steps.forEach((s) => s.classList.remove("active"));
+              steps[0].classList.add("active");
+              currentStep = 0;
+              progress.style.width = "33%";
+              respostas = [];
+            })
+            .catch(() => {
+              alert("Erro ao enviar diagnóstico. Tente novamente mais tarde.");
+            });
+        });
+      })();
+
+      // Contato: envia mensagem para o e-mail do responsável
+      (function () {
+        const contatoForm = document.getElementById("contatoForm");
+        contatoForm.addEventListener("submit", function (e) {
+          e.preventDefault();
+          const email = document.getElementById("contatoEmail").value;
+          const mensagem = document.getElementById("contatoMensagem").value;
+          fetch("https://formsubmit.co/ajax/ruancrdz2004@gmail.com", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json",
+            },
+            body: JSON.stringify({
+              message: mensagem,
+              email: email,
+            }),
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              alert(
+                "Mensagem enviada! Em breve você receberá nosso retorno por e-mail."
+              );
+              contatoForm.reset();
+            })
+            .catch(() => {
+              alert("Erro ao enviar mensagem. Tente novamente mais tarde.");
+            });
+        });
+      })();
+    </script>
   </body>
 </html>
